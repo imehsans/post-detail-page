@@ -38,7 +38,8 @@
   --space-normal: -1.8px;
 }
 
-/* Example Usage */
+/* common classes */
+
 body {
   margin: 0px;
   padding:  0px;
@@ -90,7 +91,6 @@ button:hover {
     border-right: 1px solid var(--secondary-color);
 }
 
-/* common classes */
 .icon-larger,
 .icon-normal,
 .icon-small, 
@@ -131,60 +131,59 @@ button:hover {
   
 }
 
-.post-time {
+.post-main .post-time {
   font-size: var(--font-size-small);
   color: var(--time-color);
   font-weight: var(--font-weight-medium);
   letter-spacing: var(--space-medium-small);  
 }
 
-.post_header,
-.post_title {
+.post-main .post_header,
+.post-main .post_title {
   display: flex;
   column-gap: 4px;
   align-items: center;
 }
 
-.post_header{
+.post-main .post_header{
   padding: 16px;
 }
 
-.post_hearder_details{
+.post-main .post_hearder_details{
   display: flex;
   width:  -webkit-fill-available;
   justify-content: space-between;
   align-items: center;
 }
 
-.title-about{
+.post-main .title-about{
   padding-top: 4px;
   font-size: var(--font-size-normal);
   color: var(--time-color);
   font-family: var(--font-family-secondary);
 }
 
-
-.post-details-main {
+.post-main .post-details-main {
   padding: 2px 16px 16px 16px;
 }
 
-.post-details-main .question {
+.post-main .post-details-main .question {
   padding-bottom: 16px;
   margin: 0px;
 }
 
-.post-details-main .post-content  {
+.post-main .post-details-main .post-content  {
   padding-bottom: 16px;
   font-size: var(--font-size-normal);
   margin: 0px;
 }
 
-.post-content.last-child {
+.post-main .post-content.last-child {
   padding: 0px;
   margin: 0px;
 }
 
-.tags-main {
+.post-main .tags-main {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -193,53 +192,52 @@ button:hover {
   font-size: var(--font-size-normal);
   font-weight: var(--font-weight-medium);
   color: var(--info-color);
-  
 }
 
-.tags-main > .tags{
+.post-main .tags-main > .tags{
  padding: 5px 12px;
  border: var(--tags-border);
  background: var(--tags-background);
  border-radius: 20px;
 }
 
-.post-img {
+.post-main .post-img {
   max-height: 100vh;
   overflow: hidden;
 }
 
-.icon-with-conut {
+.post-main .icon-with-conut {
   display: flex;
   align-items: center;
   color: var(--time-color);
 }
 
-.likes-section {
+.post-main .likes-section {
   padding: 12px 16px;
   display: flex;
   gap: 8px;
   border-bottom: 2px solid var(--tags-background);
 }
 
-.comment-section {
+.post-main .comment-section {
  padding: 12px 16px 18px; 
 }
 
-.comment-header-main {
+.post-main .comment-header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.comment-header {
+.post-main .comment-header {
   display: flex;
   gap: 8px;
 }
 
-.top-coment-content {
+.post-main .top-coment-content {
   padding: 8px 0 0px 42px;
 }
 
-.comment-btn {
+.post-main .comment-btn {
   display: flex;
   padding-top: 4px;
   padding-bottom: 12px;
